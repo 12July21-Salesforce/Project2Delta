@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <tabs>standard-AppLauncher</tabs>
+    <tabs>Customer__c</tabs>
+    <tabs>Lot__c</tabs>
+    <tabs>Neighborhood__c</tabs>
+    <tabs>Realtor__c</tabs>
+    <tabs>Recent_Buyers</tabs>
+    <tabs>Lot_For_Sale</tabs>
+    <tabs>Realtor_Customer_Relationship</tabs>
+    <tabs>Completed_Spec_Homes</tabs>
+</CustomApplication>
