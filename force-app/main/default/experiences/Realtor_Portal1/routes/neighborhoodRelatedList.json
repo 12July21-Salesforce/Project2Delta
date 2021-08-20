@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "b33b4518-1256-44e6-929c-cf320941ecc7",
+  "appPageId" : "43029bb5-b934-419b-b30d-83a18d91069f",
+  "configurationTags" : [ ],
+  "id" : "244171fb-8abb-4c30-8adc-81b2a1f48245",
+  "label" : "Neighborhood Related List",
+  "objectApiName" : "Neighborhood__c",
+  "routeType" : "relatedlist-a00",
+  "type" : "route",
+  "urlPrefix" : "neighborhood"
+}

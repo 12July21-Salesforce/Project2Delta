@@ -1,0 +1,34 @@
+<apex:page standardController="Lot__c" extensions="LotShowExtension" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageBlock id="lotList" title="Lots">      
+            <apex:pageBlockButtons >
+                <apex:commandButton value="|<" title="First" action="{!first}" disabled="{!NOT(HasPrevious)}" />
+                <apex:commandButton value="<" title="Previous" action="{!previous}" disabled="{!NOT(HasPrevious)}" />
+                <apex:commandButton value=">" title="Next" action="{!next}" disabled="{!NOT(HasNext)}" />
+                <apex:commandButton value=">|" title="Last" action="{!last}" disabled="{!NOT(HasNext)}" />
+                <apex:outputText >
+                      {!(pageNumber * pageSize) + 1 - pageSize}
+                      through 
+                      {!IF((pageNumber * pageSize) > resultSize, resultSize,(pageNumber * pageSize))} 
+                      of {!resultSize} records
+                </apex:outputText>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable var="lotsForSell" value="{!lotSet}">
+                <apex:column value="{!lotsForSell.Name}"/>
+                <apex:column value="{!lotsForSell.Status__c}"/>
+                <apex:column value="{!lotsForSell.Address__c}"/>
+                <apex:column value="{!lotsForSell.State__c}"/>
+                <apex:column value="{!lotsForSell.Home_Type__c}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+        <br/>Select Page Size: 
+            <apex:selectList value="{!PageSize}" size="1">
+                <apex:selectOption itemValue="5" itemLabel="5"/>
+                <apex:selectOption itemValue="10" itemLabel="10"/>
+                <apex:selectOption itemValue="20" itemLabel="20"/>
+                <apex:selectOption itemValue="50" itemLabel="50"/>
+                <apex:selectOption itemValue="100" itemLabel="100"/>
+                <apex:actionSupport event="onchange" reRender="lotList"/>
+            </apex:selectList> 
+    </apex:form>
+</apex:page>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "9ca38b59-f688-4e1f-82ca-e407a6a47a3d",
+  "appPageId" : "43029bb5-b934-419b-b30d-83a18d91069f",
+  "configurationTags" : [ ],
+  "id" : "adc7873c-d746-4cfc-8a33-c4ded726f8c1",
+  "label" : "Realtor Customer Page",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-realtor-customer-page",
+  "type" : "route",
+  "urlPrefix" : "realtor-customer-page"
+}

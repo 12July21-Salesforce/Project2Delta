@@ -1,0 +1,65 @@
+{
+  "appPageId" : "43029bb5-b934-419b-b30d-83a18d91069f",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "9ca38b59-f688-4e1f-82ca-e407a6a47a3d",
+  "label" : "Realtor Customer Page",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "A place where you can easily find solutions and ask questions",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Realtor Customer Relationships",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "6d089de9-778f-4775-94b7-0e3d87ac92cf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5c9ae7fe-afcb-40b6-81fa-930a3e3c40dd",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "600",
+        "pageName" : "CustomerRealtorPage",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "f98affb0-dd3d-44db-8b9a-2b1c3a058324",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0e4f71fe-ca74-4e85-881a-956f295e403e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "dca997c0-0769-4f73-9b15-1c59a89917ff",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Realtor Customer Page"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6cac617e-8291-4be5-b104-27a08769c192",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5c58704b-e19b-4ca2-b63c-70114879ad69",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-realtor-customer-page"
+}

@@ -1,0 +1,21 @@
+<apex:page controller="BuyersPage_CC" lightningStylesheets="true">
+<h1>Buyers Page</h1>
+<h2>Search for homes sold in the past amount of days</h2>
+<apex:form id="checkLots">
+    <apex:panelGroup >
+        <apex:inputText id="searchText" value="{!searchText}"/>
+        <apex:commandButton value="Search" action="{!Search}"/>
+    </apex:panelGroup>
+    <apex:pageBlock >
+    <apex:pageMessages />
+    <apex:pageBlockTable value="{!buyers}" var="c">
+        <apex:column value="{!c.Neighborhood__c}"/>
+        <apex:column value="{!c.Name}"/>
+        <apex:column value="{!c.Status__c}"/>   
+        <apex:column value="{!c.Customer__c}"/>
+        <apex:column value="{!c.Customer__r.Status__c}"/>
+        <apex:column value="{!c.Customer__r.Buy_Date__c}"/>
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:form>
+</apex:page>

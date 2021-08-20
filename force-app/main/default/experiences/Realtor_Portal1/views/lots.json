@@ -1,0 +1,65 @@
+{
+  "appPageId" : "43029bb5-b934-419b-b30d-83a18d91069f",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "id" : "2bb6d955-3ad0-4184-81a2-afce31058ce7",
+  "label" : "Lots",
+  "regions" : [ {
+    "id" : "124d7dbd-7bea-4db2-892f-a11c0d95dd4e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "300",
+        "pageName" : "LotsShow",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "54be25d6-b86d-4bce-aff9-36c8c54ba4aa",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3d65d58d-ad2b-4018-b76e-6b88cc32b463",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "300",
+        "pageName" : "BuyersPage",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "56cd471b-dc39-4030-a8cf-e49065da9e7f",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6cca47b0-e220-46b1-a60f-490eb9f3e4ec",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "83737be3-db51-48e7-a980-e2593b22c497",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Lots"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5493ca12-8243-4724-a37f-770b8dc329c8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ecafcac6-1b12-49ab-b899-c61d368a6650",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-lots"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "2bb6d955-3ad0-4184-81a2-afce31058ce7",
+  "appPageId" : "43029bb5-b934-419b-b30d-83a18d91069f",
+  "configurationTags" : [ ],
+  "id" : "f5362908-b214-4db7-b3f3-99635517b5bb",
+  "label" : "Lots",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-lots",
+  "type" : "route",
+  "urlPrefix" : "lots"
+}

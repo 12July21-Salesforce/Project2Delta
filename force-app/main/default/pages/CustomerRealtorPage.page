@@ -1,0 +1,54 @@
+<apex:page controller="CustomerRealtor_CC" lightningStylesheets="true">
+    <apex:form >
+        <apex:pageMessages />
+        <apex:pageBlock id="realtor_list">
+            <apex:pageBlockTable value="{! customers }" var="customer">
+                <apex:column value="{! customer.Realtor__r.Name }" />
+                <apex:column headerValue="Customers"><apex:outputLink value="{! URLFOR($Action.Customer__c.View, customer.id) }">{! customer.Name }</apex:outputLink></apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{! newRealtor }" value="New Realtor" />
+            </apex:pageBlockButtons>
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        Page: &nbsp; <apex:outputText value="{! setCon.PageNumber } of {! CEILING(setCon.ResultSize / setCon.PageSize) }" />
+                    </td>
+                    <td align="center">
+                        <!-- First page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! setCon.First }" value="|« First" rendered="{! setCon.HasPrevious }" />
+                        <!-- inactive -->
+                        <apex:commandLink style="color: #ccc" value="|« First" rendered="{! NOT(setCon.HasPrevious) }" />
+                        &nbsp;
+                        <!-- Previous page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! setCon.Previous }" value="« Previous" rendered="{! setCon.HasPrevious }" />
+                        <!-- inactive -->
+                        <apex:commandLink style="color: #ccc" value="« Previous" rendered="{! NOT(setCon.HasPrevious) }" />
+                        &nbsp;&nbsp;
+                        <!-- Next page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! setCon.Next }" value="Next »" rendered="{! setCon.HasNext }" />
+                        <!-- inactive -->
+                        <apex:commandLink style="color: #ccc" value="Next »" rendered="{! NOT(setCon.HasNext) }" />
+                        &nbsp;
+                        <!-- Last page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! setCon.Last }" value="Last »|" rendered="{! setCon.HasNext }" />
+                        <!-- inactive -->
+                        <apex:commandLink style="color: #ccc" value="Last »|" rendered="{! NOT(setCon.HasNext) }" />
+                    </td>
+                    <td align="right">
+                        Records per page:&nbsp;
+                        <apex:selectList value="{! setCon.PageSize }" size="1">
+                            <apex:selectOption itemValue="5" itemLabel="5"/>
+                            <apex:selectOption itemValue="20" itemLabel="20"/>
+                            <apex:actionSupport event="onchange" reRender="realtor_list"/>
+                        </apex:selectList>
+                    </td>
+                </tr>
+            </table>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
