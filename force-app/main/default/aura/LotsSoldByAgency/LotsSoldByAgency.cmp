@@ -1,5 +1,5 @@
 <aura:component controller="LotsController">
-    <aura:attribute name="lots" type="Lot__c[]"/>
+    <aura:attribute name="lots" type="object"/>
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     <c:LSBAHeader/>
     <c:LSBAList lots="{!v.lots}"/>

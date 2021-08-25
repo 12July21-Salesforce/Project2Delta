@@ -1,13 +1,6 @@
 <aura:component>
-    <aura:attribute name="lots" type="Lot__c[]"/>
+    <aura:attribute name="lots" type="object"/>
     <aura:attribute name="columns" type="List"/>
     <aura:handler name="init" value="{! this }" action="{!c.doInit }"/>
     <lightning:datatable keyField="id" data="{!v.lots}" columns="{!v.columns}" hideCheckboxColumn="true"/>
-    <lightning:card title="Lots">
-        <p class="slds-p-horizontal_small">
-            <aura:iteration items="{!v.lots}" var="lot">
-                <c:LSBAItem lot="{!lot}"/>
-            </aura:iteration>
-        </p>
-    </lightning:card>
 </aura:component>	
