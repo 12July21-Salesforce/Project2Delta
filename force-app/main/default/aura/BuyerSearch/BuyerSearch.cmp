@@ -1,12 +1,62 @@
 <aura:component controller="BuyerSearch_AC">
+    <lightning:card>
+        <div class="slds-page-header">
+            <div class="slds-grid">
+                <div class="slds-col slds-has-flexi-truncate">
+                    <p class="slds-text-title_caps slds-line-height_reset">Buyers</p>
+                    <h1 class="slds-page-header__title slds-var-m-right_small slds-align-middle slds-truncate" title="Buyer Search Page">My Buyers</h1>
+                </div>
+            </div>
+        </div>
+    
+        <!--Action Buttons can go here-->
+        <lightning:button variant="brand-outline" label="Past Week" title="One Week" onclick="{!c.OneWeek}"/>
+        <lightning:button variant="brand-outline" label="Past Month" title="One Month" onclick="{!c.OneMonth}"/>
+        <lightning:button variant="brand-outline" label="Past Year" title="One Year" onclick="{!c.OneYear}"/>
+        <lightning:button variant="brand-outline" label="All Data" title="All Data" onclick="{!c.ShowAllAgain}"/>
+    </lightning:card>
+
+    <!--Attributes for Lists and columns-->
     <aura:attribute name="LotList" type="Lot__c[]"/>
     <aura:attribute name="allData" type="Lot__c[]"/>
+    <aura:attribute name="WeekDaysList" type="Lot__c[]"/>
+    <aura:attribute name="MonthDaysList" type="Lot__c[]"/>
+    <aura:attribute name="YearDaysList" type="Lot__c[]"/>
     <aura:attribute name="columns" type="List"/>
 
+    <!--Delete this test-->
+    <aura:attribute name="StringTest" type="String"/>
+
+    <!--Handler for init-->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
 
-    <lightning:input type="search" label="Search" placeholders="Search for any record!" aura:id="SearchBox" onchange="{!c.searchTable}"/>
+    <!--Aura if Boolean values-->
+    <aura:attribute name="Base" type="Boolean" default="True"/>
+    <aura:attribute name="OneWeekBol" type="Boolean" default="False"/>
+    <aura:attribute name="OneMonthBol" type="Boolean" default="False"/>
+    <aura:attribute name="YearBol" type="Boolean" default="False"/>
 
-    <lightning:datatable keyField="Id" data="{!v.LotList}" columns="{!v.columns}" hideCheckboxColumn="true"/>
+    <!--Search Bar-->
+    <!--<lightning:input type="search" label="Search" placeholders="Search for any record!" aura:id="SearchBox" onchange="{!c.searchTable}"/>-->
+
+    <!--Changing the table aura:ifs [IN PROGRESS] The Boolean attributes work the table is NOT data is not returning!!!!-->
+    <aura:if isTrue="{!v.Base}">
+        <lightning:datatable keyField="Id" data="{!v.LotList}" columns="{!v.columns}" hideCheckboxColumn="true"/>
+    </aura:if> 
+
+    <aura:if isTrue="{!v.OneWeekBol}">
+        <h1>"{!v.StringTest}</h1>
+        <lightning:datatable keyField="Id" data="{!v.WeekDaysList}" coulumns="{!v.columns}" hideCheckboxColumn="true"/>
+    </aura:if>
+
+    <aura:if isTrue="{!v.OneMonthBol}">
+        <h1> "{!v.StringTest}</h1>
+        <lightning:datatable keyField="Id" data="{!v.MonthDaysList}" coulumns="{!v.columns}" hideCheckboxColumn="true"/>
+    </aura:if>
+
+    <aura:if isTrue="{!v.YearBol}">
+        <h1>"{!v.StringTest}"</h1>
+        <lightning:datatable keyField="Id" data="{!v.YearDaysList}" coulumns="{!v.columns}" hideCheckboxColumn="true"/>
+    </aura:if>
 
 </aura:component>	
