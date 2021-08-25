@@ -1,6 +1,10 @@
 <aura:component controller="LotsController">
-    <aura:attribute name="lots" type="object"/>
+    <aura:attribute name="lots" type="object[]"/>
+    <aura:attribute name="agencies" type="object[]"/>
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
-    <c:LSBAHeader/>
-    <c:LSBAList lots="{!v.lots}"/>
+    <lightning:card>
+        <aura:set attribute="title"></aura:set>
+        <c:LSBAHeader/>
+        <c:LSBAList lots="{!v.lots}" agencies="{!v.agencies}"/>
+    </lightning:card>
 </aura:component>	
