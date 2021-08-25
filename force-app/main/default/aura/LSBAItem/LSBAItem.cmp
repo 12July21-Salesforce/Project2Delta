@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:attribute name='lot' type='Lot__c'/>
+    <p><lightning:formattedText value="{!v.lot.Name}"/></p>
+</aura:component>	
