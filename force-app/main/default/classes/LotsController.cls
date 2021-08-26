@@ -38,6 +38,7 @@ public with sharing class LotsController {
         return returnAgencies;
     }
 
+    @TestVisible 
     private class LotWrapper{
         @AuraEnabled
         public Lot__c lot{get; set;}
@@ -56,6 +57,7 @@ public with sharing class LotsController {
         }
     }
 
+    @TestVisible
     private class Agency{
         @AuraEnabled
         public String value{get; set;}
