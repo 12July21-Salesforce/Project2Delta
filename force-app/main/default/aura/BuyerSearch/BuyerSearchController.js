@@ -8,12 +8,9 @@
             {label: 'Status of Customer', fieldName:'Customer__rStatus__c', type: 'text'},
             {label: 'Buy Date', fieldName:'Customer__cBuy_Date__c', type: 'Date'}
         ]);
-        helper.getLots(component);
-        helper.OneWeekH(component);
-        helper.OneMonthH(component);
-        helper.OneYearH(component);
+
     },
-    /*searchTable : function(component, event, helper){
+    searchTable : function(component, event, helper){
         var allRecs = component.get("v.allData");
         var searchFilter = event.getSource().get("v.value").toUpperCase();
         var tempArray = [];
@@ -27,32 +24,24 @@
             }
         }
         component.set("v.LotList", tempArray);
-    },*/
+    },
     OneWeek : function(component, event, helper){
-        component.set('v.OneWeekBol', true);
-        component.set('v.Base', false);
-        component.set('v.OneMonthBol', false);
-        component.set('v.YearBol', false);
-        //helper.OneWeekH(component);
+        component.set('v.NumberofDays', 7);
+        helper.getLots(component);
     },
     OneMonth : function(component,event, helper){
-        component.set('v.Base', false);
-        component.set('v.OneWeekBol', false);
-        component.set('v.YearBol', false);
-        component.set('v.OneMonthBol', true);
-        //helper.OneMonthH(component);
+        component.set('v.NumberofDays', 30);
+        helper.getLots(component);
+
     },
     OneYear : function(component, event, helper){
-        component.set('v.Base', false);
-        component.set('v.OneWeekBol', false);
-        component.set('v.OneMonthBol', false);
-        component.set('v.YearBol', true);
-        //helper.OneYearH(component);
+        component.set('v.NumberofDays', 365);
+        helper.getLots(component);
+  
     },
     ShowAllAgain : function(component,event, helper){
-        component.set('v.Base', true);
-        component.set('v.OneWeekBol', false);
-        component.set('v.OneMonthBol', false);
-        component.set('v.YearBol', false);
+        component.set('v.NumberofDays', 1000);
+        helper.getLots(component);
+
     }
 })
