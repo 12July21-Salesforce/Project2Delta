@@ -2,13 +2,16 @@ public with sharing class LotsController {
     @AuraEnabled(cacheable=true)
     public static List<LotWrapper> getLots(String agency){
         List<LotWrapper> returnLots = new List<LotWrapper>();
-        if(agency == 'All Agencies'){
-            for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name, Customer__r.Realtor__r.Realtor_Agency__c FROM Lot__c ORDER BY Name]){
-                returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
+        switch on agency {
+            when 'All Agencies', NULL {
+                for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name, Customer__r.Realtor__r.Realtor_Agency__c FROM Lot__c ORDER BY Name]){
+                    returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
+                }
+                return returnLots;
             }
-            return returnLots;
-        } else if (agency == 'No Agencies'){
-            agency = null;
+            when  'No Agencies'{
+                agency = null;
+            }
         }
         for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name FROM Lot__c WHERE Customer__r.Realtor__r.Realtor_Agency__c = :agency ORDER BY Name]){
             returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
