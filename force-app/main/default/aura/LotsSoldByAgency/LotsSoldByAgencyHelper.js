@@ -1,8 +1,8 @@
 ({
 
-    getLots : function(component, event){
+    getLots : function(component, event, agency){
         let action = component.get("c.getLots");
-        action.setParams({"agency": 'All'});
+        action.setParams({"agency": agency});
             action.setCallback(this, function(response){
                 let state = response.getState();
                 if (state === "SUCCESS"){
@@ -25,5 +25,8 @@
                 }
             });
             $A.enqueueAction(action);
+    },
+    setTitle : function(component, event, agency){
+        component.set("v.agency", agency);
     }
 })

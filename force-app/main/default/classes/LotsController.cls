@@ -2,25 +2,15 @@ public with sharing class LotsController {
     @AuraEnabled(cacheable=true)
     public static List<LotWrapper> getLots(String agency){
         List<LotWrapper> returnLots = new List<LotWrapper>();
-        if(agency == 'All'){
+        if(agency == 'All Agencies'){
             for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name, Customer__r.Realtor__r.Realtor_Agency__c FROM Lot__c ORDER BY Name]){
                 returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
             }
             return returnLots;
+        } else if (agency == 'No Agencies'){
+            agency = null;
         }
-        for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name FROM Lot__c WHERE Customer__r.Realtor__r.Realtor_Agency__c LIKE :agency ORDER BY Name]){
-            returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
-        }
-        return returnLots;
-    }
-
-    @AuraEnabled(cacheable=true)
-    public static List<LotWrapper> updateLots(String agency){
-        List<LotWrapper> returnLots = new List<LotWrapper>();
-        // for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name FROM Lot__c WHERE Customer__r.Realtor__r.Realtor_Agency__c LIKE :agency ORDER BY Name]){
-        //     returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
-        // }
-        for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name FROM Lot__c WHERE Name LIKE 'Lot 1' ORDER BY Name]){
+        for(Lot__c lot: [SELECT Id, Name, Customer__r.Realtor__r.Name, Customer__r.Name FROM Lot__c WHERE Customer__r.Realtor__r.Realtor_Agency__c = :agency ORDER BY Name]){
             returnLots.add(new LotWrapper(lot, lot.Customer__r.Realtor__r.Name, lot.Customer__r.Name));
         }
         return returnLots;
@@ -31,12 +21,10 @@ public with sharing class LotsController {
         Set<String> agencies = new Set<String>();
         List<agency> returnAgencies = new List<agency>();
 
-        Agency emptyAgency = new Agency('');
-        emptyAgency.label = '--';
-        returnAgencies.add(emptyAgency);
-        returnAgencies.add(new Agency('All'));
+        returnAgencies.add(new Agency('All Agencies'));
+        returnAgencies.add(new Agency('No Agencies'));
 
-        for(Realtor__c realtor: [SELECT Id, Realtor_Agency__c FROM Realtor__c WHERE Realtor_Agency__c != NULL]){
+        for(Realtor__c realtor: [SELECT Id, Realtor_Agency__c FROM Realtor__c WHERE Realtor_Agency__c != NULL ORDER BY Realtor_Agency__c]){
             agencies.add(realtor.Realtor_Agency__c);
         }
 
