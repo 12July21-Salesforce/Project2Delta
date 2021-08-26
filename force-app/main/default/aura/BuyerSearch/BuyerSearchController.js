@@ -2,10 +2,10 @@
     doInit : function(component, event, helper) {
         //Set the columns perm
         component.set('v.columns', [
-            {label: 'Neighborhood', fieldName: 'Neighborhood__cName', type: 'text'},
-            {label: 'Lot Name', fieldName:'Name', type: 'text'},
+            {label: 'Neighborhood', fieldName: 'linkNeighborhood__cName', type: 'url', typeAttributes: {label: {fieldName: 'Neighborhood__cName'}, target:'_blank'}},
+            {label: 'Lot Name', fieldName:'linkName', type: 'url', typeAttributes: {label: {fieldName: 'Name'}, target:'_blank'}},
             {label: 'Status',fieldName: 'Status__c', type: 'text' },
-            {label: 'Customer', fieldName: 'Customer__cName', type: 'text'},
+            {label: 'Customer', fieldName: 'linkCustomer__cName', type: 'url', typeAttributes: {label: {fieldName: 'Customer__cName'}, target:'_blank'}},
             {label: 'Status of Customer', fieldName:'Customer__rStatus__c', type: 'text'},
             {label: 'Buy Date', fieldName:'Customer__cBuy_Date__c', type: 'Date'}
         ]);

@@ -1,11 +1,11 @@
-<aura:component controller="BuyerSearch_AC">
+<aura:component controller="BuyerSearch_AC" implements="flexipage:availableForAllPageTypes, force:appHostable, flexipage:availableForRecordHome" access="Global">
     <!--Heading-->
     <lightning:card>
         <div class="slds-page-header">
             <div class="slds-grid">
                 <div class="slds-col slds-has-flexi-truncate">
-                    <p class="slds-text-title_caps slds-line-height_reset">Buyers</p>
-                    <h1 class="slds-page-header__title slds-var-m-right_small slds-align-middle slds-truncate" title="Buyer Search Page">My Buyers</h1>
+                    <p class="slds-text-title_caps slds-line-height_reset">Buyers Page</p>
+                    <h1 class="slds-page-header__title slds-var-m-right_small slds-align-middle slds-truncate" title="Buyer Search Page">Search for Homes Sold</h1>
                 </div>
             </div>
         </div>
@@ -20,9 +20,6 @@
     <!--Attributes for Lists and columns-->
     <aura:attribute name="LotList" type="Lot__c[]"/>
     <aura:attribute name="allData" type="Lot__c[]"/>
-    <aura:attribute name="WeekDaysList" type="Lot__c[]"/>
-    <aura:attribute name="MonthDaysList" type="Lot__c[]"/>
-    <aura:attribute name="YearDaysList" type="Lot__c[]"/>
     <aura:attribute name="columns" type="List"/>
 
     <!--Attribute that determines the numberOfDays-->
