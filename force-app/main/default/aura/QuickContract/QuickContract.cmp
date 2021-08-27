@@ -1,0 +1,22 @@
+<aura:component controller="QuickContract_AC" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId">
+<!--Heading to show the lot you are creating the contract for-->
+<div class="slds-page-header" role="banner">
+    <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Lot__c">
+        <div class="slds-text-heading_label">
+            <lightning:outputField fieldName="Name" variant="label-hidden"/>
+        </div>
+        <lightning:messages/>
+    </lightning:recordViewForm>
+    <h1 class="slds-page-header__title slds-var-m-right_small slds-truncate">Create New Contract</h1>
+</div>
+<!--The actual edit form [IN PROGRESS]-->
+<aura:attribute name="fields" type="String[]" default="['AccountId', 'Status', 'StartDate' , 'ContractTerm', 'CustomerSignedDate', 'CustomerSignedTitle', 'CustomerSignedId', 
+                                                        'SpecialTerms', 'Description']"/>
+<lightning:card>                                                     
+    <lightning:recordForm aura:id="form" columns="1" objectApiName="Contract" fields="{!v.fields}" onsubmit="{!c.Submit}" 
+                                                                                            onsuccess="{!c.Success}"
+                                                                                            oncancel="{!c.Cancel}">
+        <lightning:messages/>
+    </lightning:recordForm>
+</lightning:card>       
+</aura:component>	
