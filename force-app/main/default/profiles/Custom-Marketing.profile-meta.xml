@@ -609,6 +609,10 @@
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>Filtered_Lots</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>Lot_For_Sale</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
