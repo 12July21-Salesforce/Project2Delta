@@ -3,7 +3,6 @@
     <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
     <language>en_US</language>
     <masterLabel>Synergy1</masterLabel>
-    <originNetwork>Realtor Portal</originNetwork>
     <relationships>
         <network>
             <access>VIEWER</access>

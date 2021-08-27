@@ -12,6 +12,7 @@
     <browserXssProtection>true</browserXssProtection>
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
+    <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
@@ -19,9 +20,10 @@
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>Realtor Portal</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>	dwshimer@mindful-moose-pkba63.com</siteAdmin>
+    <siteAdmin>dwshimer@mindful-moose-pkba63.com</siteAdmin>
     <siteGuestRecordDefaultOwner>dwshimer@mindful-moose-pkba63.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>home-builder-developer-edition</subdomain>
+    <subdomain>daveproject2-developer-edition</subdomain>
 </CustomSite>
