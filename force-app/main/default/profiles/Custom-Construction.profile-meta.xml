@@ -122,6 +122,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>LotPaginationControllerTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>LotRealtorCC</apexClass>
         <enabled>false</enabled>
     </classAccesses>
