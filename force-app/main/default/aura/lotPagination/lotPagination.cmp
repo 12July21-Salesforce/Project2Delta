@@ -6,6 +6,10 @@
     <aura:attribute name="pageSize" type="Integer" default="5"/>
     <aura:attribute name="totalPages" type="Integer" default="0"/>
     <aura:attribute name="pageList" type="List"/>
+    <aura:attribute name="sortDirection" type="String" default="asc" />
+    <aura:attribute name="defaultSortDirection" type="String" default="asc" />
+    <aura:attribute name="sortedBy" type="String" />
+
     <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
     
     <lightning:card title="">
@@ -47,7 +51,11 @@
                                      columns="{! v.columns }"
                                      data="{! v.data }"
                                      keyField="Id"
-                                     hideCheckboxColumn="true"/>
+                                     hideCheckboxColumn="true"
+                                     defaultSortDirection="{!v.defaultSortDirection}"
+                                     sortedDirection="{!v.sortDirection}"
+                                     sortedBy="{!v.sortedBy}"
+                                     onsort="{!c.handleSort}"/>
             </lightning:layoutItem>
         </lightning:layout>
     </lightning:card>

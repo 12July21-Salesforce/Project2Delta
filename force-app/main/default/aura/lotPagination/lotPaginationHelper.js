@@ -62,4 +62,33 @@
         component.set("v.pageList", pageList);
     },
     
+    // Used to sort the 'Age' column
+    sortBy: function(field, reverse, primer) {
+        var key = primer
+            ? function(x) {
+                  return primer(x[field]);
+              }
+            : function(x) {
+                  return x[field];
+              };
+
+        return function(a, b) {
+            a = key(a);
+            b = key(b);
+            return reverse * ((a > b) - (b > a));
+        };
+    },
+
+    handleSort: function(component, event) {
+        var sortedBy = event.getParam('fieldName');
+        var sortDirection = event.getParam('sortDirection');
+
+        var cloneData = component.get('v.data').slice(0);
+        cloneData.sort((this.sortBy(sortedBy, sortDirection === 'asc' ? 1 : -1)));
+        
+        component.set('v.data', cloneData);
+        component.set('v.sortDirection', sortDirection);
+        component.set('v.sortedBy', sortedBy);
+    },
+    
 })

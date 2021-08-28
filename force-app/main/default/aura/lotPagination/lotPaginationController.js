@@ -38,5 +38,9 @@
         component.set("v.currentPageNumber", component.get("v.totalPages"));
         helper.setPageDataAsPerPagination(component, helper);
     },
+    
+    handleSort: function(component, event, helper) {
+        helper.handleSort(component, event);
+    },
   
 })
