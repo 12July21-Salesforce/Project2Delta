@@ -22,9 +22,10 @@
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>allen.gomez@resilient-moose-v0c0og.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>allen.gomez@resilient-moose-v0c0og.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>	robert.propper@wise-shark-7qihjl.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>	robert.propper@wise-shark-7qihjl.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>smallshark-developer-edition</subdomain>
+    <subdomain>daveproject2-developer-edition</subdomain>
     <urlPathPrefix>realtor</urlPathPrefix>
 </CustomSite>
+

@@ -1,0 +1,33 @@
+.THIS .list-name {
+font-weight: fontWeightBold;
+}
+.THIS .has-results {
+color: colorTextWeak;
+font-weight: fontWeightBold;
+margin-bottom: spacingSmall;
+}
+.THIS .no-results {
+color: colorTextError;
+}
+.THIS .results {
+padding: spacingMedium;
+}
+.THIS .search-field {
+padding: spacingMedium;
+}
+.THIS ul.nav {
+  padding-left: 0px;
+  background-color: #3D99CE;
+  text-align: center;
+}
+.THIS ul.nav > li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+.THIS ul.nav > li:hover {
+  background-color: #2779BF;
+}
+.THIS ul.nav > li > a {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,56 @@
+<aura:component implements="force:appHostable" controller="createRealtorController">
+    <aura:handler name="init" value="{!this}" action="{! c.doInit }"/>
+    
+    <!--this is to refresh the list once record is made-->
+    <aura:handler event="force:showToast" action="{! c.doInit }" />
+    
+    <aura:attribute name="realtorData" type="Realtor__c[]"/>
+    <aura:attribute name="newRecord" type="boolean" default="false" />
+    <aura:attribute name="showList" type="boolean" default="true" />
+    
+    <aura:if isTrue="{!v.showList}">
+    	<lightning:card title="Realtor List">
+        	<aura:set attribute="actions">
+                <lightning:button label="Create Realtor" onclick="{! c.handleCreate }" />
+            </aura:set>
+            <p class="slds-p-horizontal_small">
+            	<table>
+                	<tr>
+                        <th>Realtor Name</th>
+                        <th>Realtor Agency</th>
+                    	<th>State</th>
+                    </tr>
+                    <aura:iteration items="{! v.realtorData }" var="item">
+                    	<tr>
+                            <td>
+                            	{! item.Name }
+                            </td>
+                            <td>
+                            	{! item.Realtor_Agency__c }
+                            </td>
+                            <td>
+                            	{! item.State__c }
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </table>
+            </p>
+        </lightning:card>
+    </aura:if>
+    <aura:if isTrue="{!v.newRecord}">
+        <lightning:card title="New Realtor" class="slds-var-m-around_xx-large slds-var-p-around_xx-large">
+        	<lightning:recordEditForm onsuccess="{!c.handleShowList}" objectApiName="Realtor__c">
+                <!-- the messages componenet is for error messages-->
+                <lightning:messages />
+                
+                <lightning:inputField fieldName="Name" />
+                <lightning:inputField fieldName="Realtor_Agency__c" />
+                <lightning:inputField fieldName="State__c"/>
+                
+                <div class="slds-m-top_medium">
+                    <lightning:button variant="brand" type="submit" name="save" label="Save" />
+                </div>
+            </lightning:recordEditForm>
+        </lightning:card>
+    </aura:if>
+</aura:component>
