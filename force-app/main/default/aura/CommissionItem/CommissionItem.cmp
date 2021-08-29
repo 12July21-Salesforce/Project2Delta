@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="commissions" type="Commission__c[]"/>
+    <lightning:card title="Commissions">
+    	<p class="slds-p-horizontal_small">
+        	<aura:iteration items="{!v.commissions}" var="commission">
+                <c:CommissionTracker commission="{!commission}"/>
+            </aura:iteration>
+        </p>
+    </lightning:card>
+</aura:component>

@@ -30,6 +30,7 @@
     <tabs>Lot_For_Sale</tabs>
     <tabs>Realtor_Customer_Relationship</tabs>
     <tabs>Completed_Spec_Homes</tabs>
+    <tabs>Commission__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Home_Builder_UtilityBar</utilityBar>
 </CustomApplication>

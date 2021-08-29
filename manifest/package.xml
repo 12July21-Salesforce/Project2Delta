@@ -34,6 +34,7 @@
 		<members>Lot__c</members>
 		<members>Neighborhood__c</members>
 		<members>Realtor__c</members>
+		<members>Commission__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
