@@ -20,8 +20,8 @@
     <masterLabel>testsite</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>	a1313barnard@playful-impala-r94l3y.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>a1313barnard@playful-impala-r94l3y.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>	idiommatic@resourceful-goat-y8s4q.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>idiommatic@resourceful-goat-y8s4q.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
     <subdomain>home-builder-developer-edition</subdomain>
     <urlPathPrefix>test</urlPathPrefix>

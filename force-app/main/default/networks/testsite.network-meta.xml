@@ -5,7 +5,7 @@
     <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
     <communityRoles/>
     <disableReputationRecordConversations>true</disableReputationRecordConversations>
-    <emailSenderAddress>joey64518@gmail.com</emailSenderAddress>
+    <emailSenderAddress>idiommatic@gmail.com</emailSenderAddress>
     <emailSenderName>testsite</emailSenderName>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>

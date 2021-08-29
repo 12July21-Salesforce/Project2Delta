@@ -1,0 +1,71 @@
+<aura:component controller="DisplayHousePicCC" implements="lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,lightning:hasPageReference,lightning:isUrlAddressable">
+ 
+    <aura:attribute name="isFirst" type="boolean" default="true"/>
+    <aura:attribute name="isSecond" type="boolean" default="false"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="hoodList" type="List"/>
+    <aura:attribute name="lotList" type="List"/>
+    <aura:attribute name="selectedId" type="String"/>
+    <aura:attribute name="detailPage" type = "String"/>
+
+
+   
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:if isTrue = "{!v.isFirst}">
+        <div class="c-container" >
+            <lightning:layout multipleRows="true">
+                <aura:iteration items="{!v.hoodList}" var="hlist">
+         <lightning:layoutItem flexibility="auto" size="3" padding="around-small">
+                        <div >
+                            <ul class="slds-has-dividers_around-space">  
+                                <p align="justify">
+                                    <figure class="slds-image slds-image--card">
+                  <h3 class="slds-tile__title slds-truncate" title="{!hlist.Name}">
+                  <a href="javascript:void(0);" label="{!hlist.Name}">
+<div onclick = "{!c.onPictureClick}" title = "{!hlist.Id}" label="{!hlist.Name}">
+<c:DisplayHoodPicture  pictureList="{!hlist}" sObjectName="Neighborhood__c"/>
+                                                </div>
+                                            </a>
+                                        </h3>
+                                    </figure>
+                                </p>
+                            </ul>
+                        </div>
+                    </lightning:layoutItem>
+                </aura:iteration>
+            </lightning:layout>
+        </div>
+    </aura:if>
+    <aura:if isTrue = "{!v.isSecond}">
+ <lightning:navigation aura:id="navigate" />
+<lightning:button variant="brand" label="Back" title="Back" onclick="{!c.backClick }" />
+ <lightning:button label="Lot Page" onclick="{!c.navigate}" variant="brand"/>
+        <div class="c-container" >
+            <lightning:layout multipleRows="true">
+                <aura:iteration items="{!v.lotList}" var="hlist">
+          <lightning:layoutItem flexibility="auto" size="3" padding="around-small">
+                        <div class="" >
+                            <ul class="slds-has-dividers_around-space">  
+                                <p align="justify">
+                                    <figure class="slds-image slds-image--card">
+                  <h3 class="slds-tile__title slds-truncate" title="{!hlist.Name}">
+                             <a href="javascript:void(0);" label="{!hlist.Name}">
+
+            <div   title = "{!hlist.Id}" label="{!hlist.Name}">
+
+<c:DisplayHoodPicture pictureList="{!hlist}" sObjectName="Lot__c" />
+                                                </div>
+                                            </a>
+                                        </h3>
+                                    </figure>
+                                </p>
+                            </ul>
+                        </div>
+                    </lightning:layoutItem>
+                </aura:iteration>
+            </lightning:layout>
+        </div>
+    </aura:if>
+  
+</aura:component>

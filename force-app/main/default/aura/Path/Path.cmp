@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"  controller = "LotListController" >
+    <aura:attribute name="PicklistField" type="Lot__c"/>
+     <aura:attribute name="name" type="Lot__c"/>
+    <!--force:recordData to update picklist value-->
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.PicklistField}"
+                      mode="EDIT"/>
+	<lightning:Card iconname = "Standard:email" title = "Contruction Progress">    
+    <lightning:picklistPath aura:id="picklistPath" recordId="{!v.recordId}"
+        variant="linear"
+        picklistFieldApiName="Status__c"
+        onselect="{!c.handleSelect}">
+    </lightning:picklistPath>
+    </lightning:Card>
+</aura:component>
