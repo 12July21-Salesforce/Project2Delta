@@ -1,0 +1,22 @@
+<aura:component implements="force:hasRecordId,force:lightningQuickAction" controller="DisplayHousePicCC">
+ 
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> 
+ 
+    <aura:attribute name="pictureList" type="List"/>
+    <aura:attribute name="contents" type="List" default="[]"/>
+    <aura:attribute name="sObjectName" type="String"/>
+    <aura:attribute name="prefixURL" type="String" default="/sfc/servlet.shepherd/version/download/"/>
+   
+    <aura:iteration items="{!v.contents}" var="content">
+        <figure class="slds-image slds-image--card">
+<a href="javascript:void(0);" class="slds-image__crop  slds-image__crop--16-by-9">
+               
+<img src="{!v.prefixURL + content.Id}" alt="Description of the image"/>
+            </a>
+            <figcaption class="slds-image__title slds-image__title--card">
+<span class="slds-image__text slds-truncate" title="Image Title"> {!v.pictureList.Name}
+             </span>
+            </figcaption>
+        </figure>
+    </aura:iteration>
+</aura:component>
