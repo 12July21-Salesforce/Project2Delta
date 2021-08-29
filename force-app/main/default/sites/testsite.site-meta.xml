@@ -12,6 +12,7 @@
     <browserXssProtection>true</browserXssProtection>
     <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
     <contentSniffingProtection>true</contentSniffingProtection>
+    <cspUpgradeInsecureRequests>true</cspUpgradeInsecureRequests>
     <enableAuraRequests>true</enableAuraRequests>
     <fileNotFoundPage>FileNotFound</fileNotFoundPage>
     <genericErrorPage>Exception</genericErrorPage>
@@ -19,10 +20,11 @@
     <indexPage>CommunitiesLanding</indexPage>
     <masterLabel>testsite</masterLabel>
     <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <requireHttps>true</requireHttps>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>	a1313barnard@playful-impala-r94l3y.com</siteAdmin>
+    <siteAdmin>a1313barnard@playful-impala-r94l3y.com</siteAdmin>
     <siteGuestRecordDefaultOwner>a1313barnard@playful-impala-r94l3y.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>home-builder-developer-edition</subdomain>
+    <subdomain>project2d-developer-edition</subdomain>
     <urlPathPrefix>test</urlPathPrefix>
 </CustomSite>
