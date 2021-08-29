@@ -5,7 +5,7 @@
   "id" : "244171fb-8abb-4c30-8adc-81b2a1f48245",
   "label" : "Neighborhood Related List",
   "objectApiName" : "Neighborhood__c",
-  "routeType" : "relatedlist-a00",
+  "routeType" : "relatedlist-a02",
   "type" : "route",
   "urlPrefix" : "neighborhood"
 }

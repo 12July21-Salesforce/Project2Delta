@@ -179,39 +179,7 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
-    <tabs>Customer__c</tabs>
-    <tabs>Lot__c</tabs>
-    <tabs>Neighborhood__c</tabs>
-    <tabs>Realtor__c</tabs>
-    <tabs>Recent_Buyers</tabs>
-    <tabs>Lot_For_Sale</tabs>
-    <tabs>Realtor_Customer_Relationship</tabs>
-    <tabs>Completed_Spec_Homes</tabs>
     <workspaceConfig>
-        <mappings>
-            <tab>Completed_Spec_Homes</tab>
-        </mappings>
-        <mappings>
-            <tab>Customer__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Lot_For_Sale</tab>
-        </mappings>
-        <mappings>
-            <tab>Lot__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Neighborhood__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Realtor_Customer_Relationship</tab>
-        </mappings>
-        <mappings>
-            <tab>Realtor__c</tab>
-        </mappings>
-        <mappings>
-            <tab>Recent_Buyers</tab>
-        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>
