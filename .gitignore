@@ -36,3 +36,6 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+/force-app/main/default/sites/Home_Builder.site-meta.xml
+/force-app/main/default/sites/Realtor_Portal.site-meta.xml
+/force-app/main/default/sites/testsite.site-meta.xml

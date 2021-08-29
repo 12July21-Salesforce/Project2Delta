@@ -1,0 +1,29 @@
+<aura:component controller= "FilterLotListController" access= "global" implements= "flexipage:availableForAllPageTypes">
+    <aura:attribute name= "lots" type= "Lot__c[]"/>
+    <aura:handler name="init" value="{!this}" action= "{!c.init}" />
+    <lightning:card title="Lot List Filter">
+        <div class="search-field">
+        <lightning:input aura:id="nameFilter" label="Filter names" onchange="{!c.handleNameFilterChange}"/>
+        </div>
+        
+        <div class="results">
+            <aura:if isTrue="{!v.lots.length > 0}">
+            <p class="has-results">
+               Showing {!v.lots.length} Lots for Sale(s):
+            </p>
+            <ol class="slds-list_dotted" style="padding-left:0px">
+                <aura:iteration items="{!v.lots}" var="lot">
+                    <li>
+                        <a class="list-name" onclick="{!c.handleClickListName}" data-sfid="{!lot.Id}">
+                                 {!lot.Name}
+                        </a>
+                    </li>
+                 </aura:iteration>
+            </ol>
+                <aura:set attribute="else">
+                    <p class="no-results">No Lots for Sale.</p>
+                </aura:set>
+            </aura:if>
+        </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,46 @@
+<aura:component controller="BuyerSearch_AC" implements="flexipage:availableForAllPageTypes, force:appHostable, flexipage:availableForRecordHome, forceCommunity:availableForAllPageTypes" access="Global">
+    <!--Heading-->
+    <lightning:card>
+        <div class="slds-page-header">
+            <div class="slds-grid">
+                <div class="slds-col slds-has-flexi-truncate">
+                    <p class="slds-text-title_caps slds-line-height_reset">Buyers Page</p>
+                    <h1 class="slds-page-header__title slds-var-m-right_small slds-align-middle slds-truncate" title="Buyer Search Page">Search for Homes Sold</h1>
+                </div>
+            </div>
+        </div>
+    
+        <!--Action Buttons can go here-->
+        <lightning:button variant="brand-outline" label="Past Week" title="One Week" onclick="{!c.OneWeek}" disabled="{!v.ButtonDisableOneWeek}"/>
+        <lightning:button variant="brand-outline" label="Past Month" title="One Month" onclick="{!c.OneMonth}" disabled="{!v.BDOneMonth}"/>
+        <lightning:button variant="brand-outline" label="Past Year" title="One Year" onclick="{!c.OneYear}" disabled="{!v.BDOneYear}"/>
+        <lightning:button variant="brand-outline" label="All Data" title="All Data" onclick="{!c.ShowAllAgain}" disabled="{!v.BDAll}"/>
+    </lightning:card>
+
+    <!--Attributes for Lists and columns-->
+    <aura:attribute name="LotList" type="Lot__c[]"/>
+    <aura:attribute name="allData" type="Lot__c[]"/>
+    <aura:attribute name="columns" type="List"/>
+
+    <!--Attribute that determines the numberOfDays-->
+    <aura:attribute name="NumberofDays" type="Integer"/>
+
+    <!--Boolean Values that turns on and off buttons dependent on click of certain buttons-->
+    <aura:attribute name="ButtonDisableOneWeek" type="Boolean"/>
+    <aura:attribute name="BDOneMonth" type="Boolean"/>
+    <aura:attribute name="BDOneYear" type="Boolean"/>
+    <aura:attribute name="BDAll" type="Boolean"/>
+
+    <!--Handler for init runs everytime page reloads-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <!--Search Bar-->
+    <lightning:input type="search" label="Search" placeholders="Search for any record!" aura:id="SearchBox" onchange="{!c.searchTable}"/>
+
+    <!--Table that changes based on button clicked-->
+ 
+    <lightning:datatable keyField="Id" data="{!v.LotList}" columns="{!v.columns}" hideCheckboxColumn="true"/>
+  
+
+
+</aura:component>	

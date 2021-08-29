@@ -1,0 +1,4 @@
+<aura:component>
+    <lightning:card title="Realtor Customer Relationship" iconName="standard:scan_card">
+    </lightning:card>
+</aura:component>
