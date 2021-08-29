@@ -14,10 +14,18 @@ private class LotsControllerTest {
         insert testLot;
         List<LotsController.LotWrapper> returnedLots = LotsController.getLots('No Agencies');
         system.assertEquals(1, returnedLots.size());
+        returnedLots = LotsController.getLots(NULL);
+        system.assertEquals(1, returnedLots.size());
+        returnedLots = LotsController.getLots('Test Agency');
+        system.assertEquals(0, returnedLots.size());
 
         testLot.Customer__c = testCustomer.Id;
-        update testCustomer;
+        update testLot;
         returnedLots = LotsController.getLots('No Agencies');
+        system.assertEquals(0, returnedLots.size());
+        returnedLots = LotsController.getLots(NULL);
+        system.assertEquals(1, returnedLots.size());
+        returnedLots = LotsController.getLots('Test Agency');
         system.assertEquals(1, returnedLots.size());
     }
 
