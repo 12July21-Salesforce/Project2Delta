@@ -3,10 +3,5 @@
     <fullName>All</fullName>
     <columns>NAME</columns>
     <filterScope>Everything</filterScope>
-    <filters>
-        <field>Status__c</field>
-        <operation>equals</operation>
-        <value>Developed,Under Construction,Construction Complete</value>
-    </filters>
     <label>All</label>
 </ListView>
