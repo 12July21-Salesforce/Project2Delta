@@ -5,7 +5,7 @@
   "id" : "5d48a817-b035-46e8-8c33-1ece5f8a3efe",
   "label" : "Neighborhood Detail",
   "objectApiName" : "Neighborhood__c",
-  "routeType" : "detail-a00",
+  "routeType" : "detail-a02",
   "type" : "route",
   "urlPrefix" : "neighborhood"
 }

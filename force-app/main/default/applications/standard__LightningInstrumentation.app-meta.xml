@@ -6,13 +6,5 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
-    <tabs>Customer__c</tabs>
-    <tabs>Lot__c</tabs>
-    <tabs>Neighborhood__c</tabs>
-    <tabs>Realtor__c</tabs>
-    <tabs>Recent_Buyers</tabs>
-    <tabs>Lot_For_Sale</tabs>
-    <tabs>Realtor_Customer_Relationship</tabs>
-    <tabs>Completed_Spec_Homes</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>
