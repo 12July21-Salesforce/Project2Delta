@@ -509,6 +509,9 @@
         <layout>Customer__c-Customer Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Global-Global Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Lot__c-Lot Layout</layout>
     </layoutAssignments>
     <layoutAssignments>

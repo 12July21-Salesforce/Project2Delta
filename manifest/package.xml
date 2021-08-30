@@ -131,5 +131,9 @@
 		<members>Lot__c.Other_Lots_Sold_by_Same_Agency</members>
 		<name>WebLink</name>
 	</types>
+	<types>
+		<members>Global-Global Layout</members>
+		<name>Layout</name>
+	</types>
 	<version>51.0</version>
 </Package>
