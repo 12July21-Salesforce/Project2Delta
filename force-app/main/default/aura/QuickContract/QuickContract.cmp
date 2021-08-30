@@ -1,4 +1,4 @@
-<aura:component controller="QuickContract_AC" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId, forceCommunity:availableForAllPageTypes">
+<aura:component controller="QuickContract_AC" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId,forceCommunity:availableForAllPageTypes">
 <!--Heading to show the lot you are creating the contract for-->
 <div class="slds-page-header" role="banner">
     <lightning:recordViewForm recordId="{!v.recordId}" objectApiName="Lot__c">
@@ -19,4 +19,4 @@
         <lightning:messages/>
     </lightning:recordForm>
 </lightning:card>       
-</aura:component>	
+</aura:component>

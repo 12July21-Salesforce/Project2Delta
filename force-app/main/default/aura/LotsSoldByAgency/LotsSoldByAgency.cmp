@@ -9,4 +9,4 @@
         <c:LSBAHeader agency="{!v.agency}"/>
         <c:LSBAList lots="{!v.lots}" agencies="{!v.agencies}"/>
     </lightning:card>
-</aura:component>	
+</aura:component>

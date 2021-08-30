@@ -1,4 +1,4 @@
-<aura:component controller="BuyerSearch_AC" implements="flexipage:availableForAllPageTypes, force:appHostable, flexipage:availableForRecordHome, forceCommunity:availableForAllPageTypes" access="Global">
+<aura:component controller="BuyerSearch_AC" implements="flexipage:availableForAllPageTypes,force:appHostable,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes" access="Global">
     <!--Heading-->
     <lightning:card>
         <div class="slds-page-header">
@@ -43,4 +43,4 @@
   
 
 
-</aura:component>	
+</aura:component>

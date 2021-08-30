@@ -1,4 +1,4 @@
-<aura:component description="LotPagination" controller="LotPaginationController" implements="force:appHostable,flexipage:availableForAllPageTypes, forceCommunity:availableForAllPageTypes" access="global" >
+<aura:component description="LotPagination" controller="LotPaginationController" implements="force:appHostable,flexipage:availableForAllPageTypes,forceCommunity:availableForAllPageTypes" access="global" >
     <aura:attribute name="data" type="Object"/>
     <aura:attribute name="columns" type="List"/>
     <aura:attribute name="allData" type="List"/>

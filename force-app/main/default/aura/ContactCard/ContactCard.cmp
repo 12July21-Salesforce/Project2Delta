@@ -15,4 +15,4 @@
             <lightning:formattedPhone value='{!v.Phone}'/>
         </p>
     </lightning:card>
-</aura:component>	
+</aura:component>

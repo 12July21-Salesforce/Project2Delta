@@ -4,4 +4,4 @@
     <c:ContactCard Name='{!v.Organization.Name}' Street='{!v.Organization.Street}' City='{!v.Organization.City}' 
     State='{!v.Organization.State}' PostalCode="{!v.Organization.PostalCode}" 
     Country='{!v.Organization.Country}' Phone='{!v.Organization.Phone}'/>
-</aura:component>	
+</aura:component>

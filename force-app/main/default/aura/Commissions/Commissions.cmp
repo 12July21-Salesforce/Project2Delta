@@ -1,4 +1,4 @@
-<aura:component controller="CommissionController" implements="force:appHostable,flexipage:availableForRecordHome, forceCommunity:availableForAllPageTypes">
+<aura:component controller="CommissionController" implements="force:appHostable,flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes">
     <aura:attribute name="commissions" type="Commission__c[]"/>
     <aura:attribute name="newCommission" type="Commission__c" default="{ 'sobjectType' : 'Commission__c',
                                                                        'Realtor__c':'',

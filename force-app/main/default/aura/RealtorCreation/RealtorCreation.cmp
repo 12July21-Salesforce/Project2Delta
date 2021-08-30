@@ -1,4 +1,4 @@
-<aura:component implements="force:appHostable, forceCommunity:availableForAllPageTypes" controller="createRealtorController">
+<aura:component implements="force:appHostable,forceCommunity:availableForAllPageTypes" controller="createRealtorController">
     <aura:handler name="init" value="{!this}" action="{! c.doInit }"/>
     
     <!--this is to refresh the list once record is made-->
@@ -38,15 +38,20 @@
         </lightning:card>
     </aura:if>
     <aura:if isTrue="{!v.newRecord}">
-        <lightning:card title="New Realtor" class="slds-var-m-around_xx-large slds-var-p-around_xx-large">
-        	<lightning:recordEditForm onsuccess="{!c.handleShowList}" objectApiName="Realtor__c">
+
+		<lightning:card title="New Realtor" class="slds-var-m-around_xx-large slds-var-p-around_xx-large">
+            <lightning:recordEditForm onsuccess="{!c.handleShowList}" objectApiName="Realtor__c">
                 <!-- the messages componenet is for error messages-->
                 <lightning:messages />
-                
-                <lightning:inputField fieldName="Name" />
-                <lightning:inputField fieldName="Realtor_Agency__c" />
-                <lightning:inputField fieldName="State__c"/>
-                
+				<div>
+                	<lightning:inputField fieldName="Name" />
+                </div>
+                <div>
+                	<lightning:inputField fieldName="Realtor_Agency__c" />
+                </div>
+                <div>
+                	<lightning:inputField fieldName="State__c"/>
+				</div>
                 <div class="slds-m-top_medium">
                     <lightning:button variant="brand" type="submit" name="save" label="Save" />
                 </div>

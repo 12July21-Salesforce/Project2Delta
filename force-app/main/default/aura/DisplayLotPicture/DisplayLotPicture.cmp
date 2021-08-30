@@ -1,4 +1,4 @@
-<aura:component controller="DisplayHousePicCC" implements="lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,lightning:hasPageReference,lightning:isUrlAddressable, forceCommunity:availableForAllPageTypes">
+<aura:component controller="DisplayHousePicCC" implements="lightning:actionOverride,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:lightningQuickAction,force:hasRecordId,force:appHostable,flexipage:availableForAllPageTypes,lightning:hasPageReference,lightning:isUrlAddressable,forceCommunity:availableForAllPageTypes">
  
     <aura:attribute name="isFirst" type="boolean" default="true"/>
     <aura:attribute name="isSecond" type="boolean" default="false"/>

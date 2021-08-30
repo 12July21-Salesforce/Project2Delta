@@ -6,4 +6,4 @@
     <aura:registerEvent name="updateLots" type="c:lotsUpdate"/>
     <lightning:combobox name="agency" label="Filter Agency:" placeholder="All Agencies" options="{!v.agencies}" onchange="{!c.handleChange}"/>
     <lightning:datatable keyField="id" data="{!v.lots}" columns="{!v.columns}" hideCheckboxColumn="true"/>
-</aura:component>	
+</aura:component>
