@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="forceCommunity:availableForAllPageTypes">
     <aura:attribute name='Name' type='String'/>
     <aura:attribute name='Street' type='String'/>
     <aura:attribute name='City' type='String'/>

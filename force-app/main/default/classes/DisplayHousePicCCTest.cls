@@ -5,6 +5,7 @@ private class DisplayHousePicCCTest {
   private static testmethod void  contentDocumentTest(){
   
       Neighborhood__c n = new Neighborhood__c(Name = 'positive');
+
       insert n;
       Neighborhood__c n2 = new Neighborhood__c(Name = 'negative');
       insert n2;
@@ -25,6 +26,7 @@ private class DisplayHousePicCCTest {
         ContentDocumentLink cdl = New ContentDocumentLink();
       	cdl.Visibility ='AllUsers';
         cdl.LinkedEntityId= n.id;
+
        cdl.ContentDocumentId = lotDocId;
         cdl.ShareType = 'I';
         insert cdl;
@@ -118,7 +120,6 @@ private class DisplayHousePicCCTest {
         system.assertequals('positive', nH.Name ='positive');
         //negative test to check record is not returned when name != positive
         system.assertNotEquals('negative', nH.Name = 'positive');
-        
     }
     
     private static testmethod void bulkTestSoqlReturn(){

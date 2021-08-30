@@ -1,4 +1,4 @@
-<aura:component implements="force:appHostable" controller="createRealtorController">
+<aura:component implements="force:appHostable, forceCommunity:availableForAllPageTypes" controller="createRealtorController">
     <aura:handler name="init" value="{!this}" action="{! c.doInit }"/>
     
     <!--this is to refresh the list once record is made-->
