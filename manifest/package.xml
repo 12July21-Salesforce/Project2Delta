@@ -29,12 +29,12 @@
 		<name>CustomApplication</name>
 	</types>
 	<types>
+		<members>Commission__c</members>
 		<members>Contract</members>
 		<members>Customer__c</members>
 		<members>Lot__c</members>
 		<members>Neighborhood__c</members>
 		<members>Realtor__c</members>
-		<members>Commission__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
@@ -79,6 +79,10 @@
 		<members>Custom-Marketing</members>
 		<members>Home Builder Profile</members>
 		<name>Profile</name>
+	</types>
+	<types>
+		<members>Lot__c.Quick_Contract</members>
+		<name>QuickAction</name>
 	</types>
 	<types>
 		<members>Metric.Completion</members>
