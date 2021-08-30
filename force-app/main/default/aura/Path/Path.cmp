@@ -1,4 +1,4 @@
-<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId, forceCommunity:availableForAllPageTypes"  controller = "LotListController" >
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"  controller = "DisplayHousePicCC" >
     <aura:attribute name="PicklistField" type="Lot__c"/>
      <aura:attribute name="name" type="Lot__c"/>
     <!--force:recordData to update picklist value-->
