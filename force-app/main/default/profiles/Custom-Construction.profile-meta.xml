@@ -503,22 +503,7 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer__c-Customer Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
         <layout>Global-Global Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lot__c-Lot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Neighborhood__c-Neighborhood Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Realtor__c-Realtor Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
