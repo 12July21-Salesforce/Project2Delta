@@ -1,0 +1,18 @@
+<aura:component>
+    <aura:attribute name='Name' type='String'/>
+    <aura:attribute name='Street' type='String'/>
+    <aura:attribute name='City' type='String'/>
+    <aura:attribute name='State' type='String'/>
+    <aura:attribute name='PostalCode' type='String'/>
+    <aura:attribute name='Country' type='String'/>
+    <aura:attribute name='Phone' type='String'/>
+    <lightning:card title="{!v.Name}">
+        <p class="slds-p-horizontal_small">
+            <p>Address:</p>
+            <lightning:formattedAddress street='{!v.Street}' postalCode="{!v.PostalCode}" country="{!v.Country}"
+            province="{!v.State}" city="{!v.City}"/>
+            <p>Phone:</p> 
+            <lightning:formattedPhone value='{!v.Phone}'/>
+        </p>
+    </lightning:card>
+</aura:component>	

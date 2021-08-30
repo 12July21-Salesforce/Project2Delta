@@ -1,0 +1,30 @@
+<aura:component>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="formatdate" type="Date"/>
+    <aura:attribute name="commission" type="Commission__c"/>
+    <aura:registerEvent name="updateCommission" type="c:commissionItemUpdate"/>
+    <lightning:card title="{!v.commission.Realtor__r.Name}" iconName="standard:scan_card"
+                    class="{!v.commission.Paid__c ?
+                           'slds-theme_success' : ''}">
+    	<aura:set attribute="footer">
+            <p>Date: <lightning:formattedDateTime value="{!v.formatdate}" timeZone="EST"/></p>
+            <p class="slds-text-title"><lightning:relativeDateTime value="{!v.formatdate}"/></p>
+        </aura:set>
+        <p class="slds-text-heading_medium slds-p-horizontal_small">
+            Amount: <lightning:formattedNumber value="{!v.commission.Commission_Amount__c}" style="currency"/>
+        </p>
+        <p class="slds-p-horizontal_small">
+        	Realtor: {!v.commission.Realtor__r.Name}
+        </p>
+        <p>
+        	<lightning:input type="toggle"
+                             label="Paid?"
+                             name="paid"
+                             class="slds-p-around_small"
+                             checked="{!v.commission.Paid__c}"
+                             messageToggleActive="Yes"
+                             messgeToggleInactive="No"
+                             onchange="{!c.clickPaid}"/>
+        </p>
+    </lightning:card>
+</aura:component>

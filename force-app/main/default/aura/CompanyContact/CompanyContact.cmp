@@ -1,0 +1,7 @@
+<aura:component controller="CompanyContactController">
+    <aura:attribute name='Organization' type='Object'/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <c:ContactCard Name='{!v.Organization.Name}' Street='{!v.Organization.Street}' City='{!v.Organization.City}' 
+    State='{!v.Organization.State}' PostalCode="{!v.Organization.PostalCode}" 
+    Country='{!v.Organization.Country}' Phone='{!v.Organization.Phone}'/>
+</aura:component>	

@@ -1,0 +1,12 @@
+<aura:component controller="LotsController">
+    <aura:attribute name="lots" type="object[]"/>
+    <aura:attribute name="agencies" type="object[]"/>
+    <aura:attribute name="agency" type="String" default="All Agencies"/>
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:handler name="updateLots" event="c:lotsUpdate" action="{!c.handleUpdateLots}"/>
+    <lightning:card>
+        <aura:set attribute="title"></aura:set>
+        <c:LSBAHeader agency="{!v.agency}"/>
+        <c:LSBAList lots="{!v.lots}" agencies="{!v.agencies}"/>
+    </lightning:card>
+</aura:component>	
