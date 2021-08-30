@@ -86,12 +86,7 @@
 		<name>LightningComponentBundle</name>
 	</types>
 	<types>
-		<members>Aura_1_Menu</members>
-		<members>Aura_2_Menu</members>
-		<members>Aura_3_Menu</members>
-		<members>Aura_4_Menu</members>
-		<members>Aura_5_Menu</members>
-		<members>Menu</members>
+		<members>*</members>
 		<name>NavigationMenu</name>
 	</types>
 	<types>
