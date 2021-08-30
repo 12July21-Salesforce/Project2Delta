@@ -21,6 +21,18 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>Case.Auto Case Response</members>
+		<name>AutoResponseRule</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>AutoResponseRules</name>
+	</types>
+	<types>
+		<members>Lead.Lead Help</members>
+		<name>BusinessProcess</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>ContentAsset</name>
 	</types>
@@ -51,6 +63,10 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>ExperienceBundle</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>FlexiPage</name>
 	</types>
 	<types>
@@ -70,8 +86,21 @@
 		<name>LightningComponentBundle</name>
 	</types>
 	<types>
+		<members>Aura_1_Menu</members>
+		<members>Aura_2_Menu</members>
+		<members>Aura_3_Menu</members>
+		<members>Aura_4_Menu</members>
+		<members>Aura_5_Menu</members>
+		<members>Menu</members>
+		<name>NavigationMenu</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>Network</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>NetworkBranding</name>
 	</types>
 	<types>
 		<members>Admin</members>
@@ -96,6 +125,10 @@
 	<types>
 		<members>*</members>
 		<name>StaticResource</name>
+	</types>
+	<types>
+		<members>Lot__c.Other_Lots_Sold_by_Same_Agency</members>
+		<name>WebLink</name>
 	</types>
 	<version>51.0</version>
 </Package>
