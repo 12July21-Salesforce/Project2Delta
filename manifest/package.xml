@@ -57,14 +57,14 @@
 		<members>*</members>
 		<name>CustomTab</name>
 	</types>
-	<types>
+	<!--<types>
 		<members>Experiences_Shared_Document_Folder/Synergy_jpg.jpg</members>
 		<name>Document</name>
 	</types>
 	<types>
 		<members>*</members>
 		<name>ExperienceBundle</name>
-	</types>
+	</types>-->
 	<types>
 		<members>*</members>
 		<name>FlexiPage</name>
