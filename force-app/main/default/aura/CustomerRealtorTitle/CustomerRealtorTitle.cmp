@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="forceCommunity:availableForAllPageTypes">
     <lightning:card title="Realtor Customer Relationship" iconName="standard:scan_card">
     </lightning:card>
 </aura:component>

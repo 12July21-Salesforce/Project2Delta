@@ -1,4 +1,4 @@
-<aura:component implements="force:hasRecordId,force:lightningQuickAction" controller="DisplayHousePicCC">
+<aura:component implements="force:hasRecordId,force:lightningQuickAction, forceCommunity:availableForAllPageTypes" controller="DisplayHousePicCC">
  
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" /> 
  

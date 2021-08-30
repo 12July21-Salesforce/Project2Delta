@@ -1,4 +1,4 @@
-<aura:component controller="LotsController">
+<aura:component controller="LotsController" implements="forceCommunity:availableForAllPageTypes">
     <aura:attribute name="lots" type="object[]"/>
     <aura:attribute name="agencies" type="object[]"/>
     <aura:attribute name="agency" type="String" default="All Agencies"/>

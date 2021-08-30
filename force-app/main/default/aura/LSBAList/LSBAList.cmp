@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="forceCommunity:availableForAllPageTypes">
     <aura:attribute name="lots" type="object[]"/>
     <aura:attribute name="columns" type="List"/>
     <aura:attribute name="agencies" type="object[]"/>

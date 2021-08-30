@@ -1,4 +1,4 @@
-<aura:component>
+<aura:component implements="forceCommunity:availableForAllPageTypes">
     <aura:attribute name="agency" type="string" default="All Agencies"/>
     <lightning:layout class="slds-page-header slds-page-header_object-home">
         <lightning:layoutItem>
