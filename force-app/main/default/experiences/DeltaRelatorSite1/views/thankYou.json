@@ -1,0 +1,47 @@
+{
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "280c661e-d0e8-4e1a-9554-415e70d82102",
+  "label" : "Thank you",
+  "regions" : [ {
+    "id" : "76baac10-4523-44bf-829f-3a84d144c51a",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"font-size: 36px; color: rgb(255, 255, 255);\">THANK YOU! </span></p><p><br></p><p><span style=\"font-size: 36px; color: rgb(255, 255, 255);\">We will contact you as soon as possible!</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "28ea408a-4e39-45ed-bde5-2d668d7c3afb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a5497aac-98b7-4fb8-b586-16b8e2d02e5b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8e39c188-3ee7-4e9e-a285-c15b4049f12c",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Thank you"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "54f7e0a9-55cc-4641-925c-841f13944b54",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e75d2177-6105-4a4c-b2b7-d1039e5de625",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "custom-thank-you"
+}

@@ -1,0 +1,68 @@
+{
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "768e4332-9b29-4bac-89a8-6cf47b098ec1",
+  "label" : "Aura2 - Allen",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Find out which Realtor belongs to a Customer",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "0109af65-8b9c-44d7-84fd-31744d51c0f7",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "38f2719a-a979-4f18-bc3b-57273c6117e7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:CustomerRealtorTitle",
+      "id" : "3fa226bf-fd7f-4035-a29c-be7e505264ef",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:CustomerRealtorList",
+      "id" : "53dee9c3-0789-4dc7-91be-1a6c81321865",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "444e9d29-7451-40c5-a851-39d7d6276868",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4893ff93-def7-4d44-9eac-cf503f7cb0b9",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Aura2 - Allen"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d13d2d92-0159-4db1-8170-27af194b63ec",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c2687ab8-3bdb-4306-9d12-718deff7edcd",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-aura2-allen"
+}

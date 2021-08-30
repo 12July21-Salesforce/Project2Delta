@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ee3dd0be-f872-462c-bf61-3769a8df9a08",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "4c08b79b-d2fc-4c8a-a428-394d28e8f000",
+  "label" : "Aura5 - Robert",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-aura5-robert",
+  "type" : "route",
+  "urlPrefix" : "aura5-robert"
+}

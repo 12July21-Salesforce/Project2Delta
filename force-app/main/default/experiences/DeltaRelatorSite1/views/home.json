@@ -1,0 +1,97 @@
+{
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "ba73e348-ec41-491c-9c7d-61d1811563a1",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "A place where you can easily find solutions and ask questions",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Welcome to Customer Support!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "6a3f1ce3-9e82-42cc-b792-c2770fef8b83",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b33036c4-d5cc-4ce0-8ce9-88c52a8e35ed",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "allowAttachments" : true,
+        "attachmentLabel" : "Upload File",
+        "buttonAlignment" : "center",
+        "buttonBgColor" : "",
+        "buttonBgHoverColor" : "",
+        "buttonBorderColor" : "",
+        "buttonMaxWidth" : "",
+        "buttonRadius" : 0,
+        "buttonTextColor" : "",
+        "buttonTextHoverColor" : "",
+        "callToAction" : false,
+        "callToActionButtonText" : "",
+        "callToActionText" : "",
+        "callToActionUrl" : "",
+        "confirmationSubtext" : "We’ll get back to you soon.",
+        "confirmationText" : "Your case was created.",
+        "guestQuickActionName" : "Select or configure a global action",
+        "headerSubtitle" : "Tell us how we can help.",
+        "headerTitle" : "Contact Customer Support",
+        "quickActionName" : "Guest_Case",
+        "requestSummaryText" : "Case summary"
+      },
+      "componentName" : "forceCommunity:contactSupportForm",
+      "id" : "b998fa14-5ae8-4264-8ba9-ace9dd4a853d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "84080640-98fe-4c2a-ae75-986fbf8d7632",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "6d30a309-a37e-4c34-908d-d741bafbf23d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "97e6686e-f48a-402e-a6d4-83d48b7a730f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "65c75955-37ad-40f1-b014-47dbcc6c0a33",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<!--  ----------------------------------------------------------------------  -->\n<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->\n<!--  If necessary, please modify the charset parameter to specify the        -->\n<!--  character set of your HTML page.                                        -->\n<!--  ----------------------------------------------------------------------  -->\n\n<!--  ----------------------------------------------------------------------  -->\n<!--  NOTE: Please add the following <FORM> element to your page.             -->\n<!--  ----------------------------------------------------------------------  -->\n<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"col-xs-12 col-md-12\">\n            <div class=\"panel panel-default\">\n                <div class=\"panel-heading\">\n                   \n                    &nbsp;&nbsp;&nbsp;\n                    <h1 size=\"32\">Contact Form to buy a house!</h1>\n                </div>\n                <div class=\"panel-body\">\n                    <form action=\"https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8\" method=\"POST\" class=\"slds-form_stacked\">\n                    <input type=hidden name=\"oid\" value=\"00D5f000000IhpP\">\n                    <input type=hidden name=\"retURL\" value=\"https://delta123-developer-edition.na163.force.com/DeltaRelatorSite/s/thank-you\">\n                    <!--  ----------------------------------------------------------------------  -->\n                    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->\n                    <!--  these lines if you wish to test in debug mode.                          -->\n                    <!--  <input type=\"hidden\" name=\"debug\" value=1>                              -->\n                    <!--  <input type=\"hidden\" name=\"debugEmail\"                                  -->\n                    <!--  value=\"tkang@blueflame-software.com\">                                   -->\n                    <!--  ----------------------------------------------------------------------  -->\n                    <div class=\"row\">\n                <div class=\"col-xs-6 col-md-6\">\n                            <div class=\"form-group\">\n                                <label for=\"first_name\">First Name: <span style=\"color:red;\">*</span></label>\n                                <br/>\n                                <input  id=\"first_name\" maxlength=\"40\" name=\"first_name\" size=\"20\" type=\"text\" class=\"form-control\" required/>\n                            </div>\n                        </div>\n                        <div class=\"slds-grid\">\n                            <div class=\"form-group\">\n                                <label for=\"last_name\">Last Name: <span style=\"color:red;\">*</span></label>\n                                <br/>\n                                <input  id=\"last_name\" maxlength=\"80\" name=\"last_name\" size=\"20\" type=\"text\" class=\"form-control\" required />\n                            </div>\n \n                        </div>\n                    </div>\n                    <div class=\"row\">\n                <div class=\"col-xs-4 col-md-4\">\n                            <div class=\"form-group\">\n                                <label for=\"email\">Email: <span style=\"color:red;\">*</span></label>\n                                <br/>\n                                <input  id=\"email\" maxlength=\"80\" name=\"email\" size=\"20\" type=\"text\" class=\"form-control\" required />\n                             </div>\n                        </div>\n                        <div class=\"col-xs-4 col-md-4\">\n                            <div class=\"form-group\">\n                                <label for=\"phone\">Phone:</label>\n                                <br/>\n                                <input  id=\"phone\" maxlength=\"40\" name=\"phone\" size=\"20\" type=\"text\" class=\"form-control\" />\n                            </div>\n                        </div>\n                        </div>\n                    <div class=\"row\">\n                <div class=\"col-xs-12 col-md-12\">\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                <div class=\"col-xs-12 col-md-12\">\n                            <div class=\"form-group\">\n                                <label for=\"description\">Comments:</label>\n                                <br/>\n                                <textarea name=\"description\" class=\"form-control\" ></textarea>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"row\">\n                <div class=\"col-xs-4 col-md-4\">\n                            <div class=\"form-group\">\n                                <input class=\"btn btn-primary\" type=\"submit\" name=\"submit\">\n                            </div>\n                        </div>\n                    </div>\n                 </form>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "e4a15097-b51b-410b-a5df-b40968a1116c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a4e1cfb9-61cd-4651-ac8b-8f8fd04f9e92",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

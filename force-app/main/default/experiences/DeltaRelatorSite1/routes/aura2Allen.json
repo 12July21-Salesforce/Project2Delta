@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "768e4332-9b29-4bac-89a8-6cf47b098ec1",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "6544eda6-121a-47c2-887c-d1d893837f66",
+  "label" : "Aura2 - Allen",
+  "pageAccess" : "Public",
+  "routeType" : "custom-aura2-allen",
+  "type" : "route",
+  "urlPrefix" : "aura2-allen"
+}

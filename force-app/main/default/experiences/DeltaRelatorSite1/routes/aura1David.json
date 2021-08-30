@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6551939d-695f-4214-9ca7-ee03e38bdf1c",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "668950e7-755b-402a-92a5-78f29aedec65",
+  "label" : "Aura1 - David",
+  "pageAccess" : "Public",
+  "routeType" : "custom-aura1",
+  "type" : "route",
+  "urlPrefix" : "aura1"
+}

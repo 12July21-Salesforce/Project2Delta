@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "408accc3-9e74-49fc-9168-a9f554c3c4d4",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "f3c6e1de-0a85-442f-8c98-5d2369158131",
+  "label" : "Aura3- Alex",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-aura3-alex",
+  "type" : "route",
+  "urlPrefix" : "aura3-alex"
+}

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "87c66a29-698f-4611-bbb2-16a715dbea6a",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "a6039cbf-899b-444f-8881-52cd4db617b4",
+  "label" : "Buy a House",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-buy-a-house",
+  "type" : "route",
+  "urlPrefix" : "buy-a-house"
+}

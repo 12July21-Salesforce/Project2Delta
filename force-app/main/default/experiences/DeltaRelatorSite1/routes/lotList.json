@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "2421ecd6-a595-4f86-be70-6f0d34bb5617",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "a0e1a074-496f-41a0-aade-48b6f70a129b",
+  "label" : "Lot List",
+  "objectApiName" : "Lot__c",
+  "routeType" : "list-a01",
+  "type" : "route",
+  "urlPrefix" : "lot"
+}

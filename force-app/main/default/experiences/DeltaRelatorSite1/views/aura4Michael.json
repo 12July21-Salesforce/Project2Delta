@@ -1,0 +1,61 @@
+{
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "25023cac-b38b-4892-821b-7f3bc6051a7f",
+  "label" : "Aura4 - Michael",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Filter which agency you want to check out!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "57a0d9e9-59e7-496c-8b53-96fda7fc8fa1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3fbc4d81-229e-40ad-93cc-5602153d300b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:LotsSoldByAgency",
+      "id" : "b40f2a15-0f2b-4cc9-a0c2-de0efa704a55",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6be4bc3c-5560-44e2-8d6f-62d0de8ae8fd",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "9b5f6a84-d57c-42cf-8789-b9be19a5720d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Aura4 - Michael"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "3f34ed0b-1320-4f6f-89ec-4285b701ba08",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6517df46-ecb1-478e-b2be-d696ceb01f6b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-aura4-michael"
+}

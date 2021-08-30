@@ -1,0 +1,73 @@
+{
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "componentName" : "siteforce:sldsTwoCol66Layout",
+  "id" : "6551939d-695f-4214-9ca7-ee03e38bdf1c",
+  "label" : "Aura1",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "Filter through all Lots! ",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Welcome!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "095f98ad-b1ca-4a56-9417-f8e38b31fc0a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4464020c-7c48-4b1a-8725-406798fc002e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:lotPagination",
+      "id" : "d9087d9a-8fee-4232-b917-a84dfdee407a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dee0da15-69fd-4b4f-bd28-fbe025e0442a",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "63f69ea7-b474-4ba0-a868-576b2f7993fe",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Aura1"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d980eb9c-c67a-4d8e-851a-160d1dece842",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "bebaf406-c189-4f2b-9688-1800c2d48362",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:lotListFilter",
+      "id" : "11b99767-ee34-40e6-b1bd-ccc022b156fe",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "25221253-5e9f-405d-aa29-84c0c697ae9c",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-aura1"
+}

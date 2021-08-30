@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "b996a2c4-9054-4309-8e07-782e11bd7e34",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "0edbde30-4aa3-40ed-a540-42887c1ec4e2",
+  "label" : "Neighborhood Detail",
+  "objectApiName" : "Neighborhood__c",
+  "routeType" : "detail-a02",
+  "type" : "route",
+  "urlPrefix" : "neighborhood"
+}

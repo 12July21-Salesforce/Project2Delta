@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "25023cac-b38b-4892-821b-7f3bc6051a7f",
+  "appPageId" : "4ddd4099-7b46-4f01-b1cb-f36e1ec3edbf",
+  "configurationTags" : [ ],
+  "id" : "8d887899-a659-4ad8-bc1f-48fb18f7f829",
+  "label" : "Aura4 - Michael",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-aura4-michael",
+  "type" : "route",
+  "urlPrefix" : "aura4-michael"
+}
