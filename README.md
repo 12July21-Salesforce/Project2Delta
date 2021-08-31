@@ -1,4 +1,3 @@
-# Project2Delta
 # Project Details
 For this project, Team Amplifier Delta took on the project of Team Synergy, Our goal was to iterate what was previously created, by stepping away from Visualforce and into Aura Compoenents. To do this each member of our team took one page to convert to an Aura Component, and also implemented a business fucntional Aura Component.
 
