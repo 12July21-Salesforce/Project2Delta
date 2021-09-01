@@ -52,6 +52,9 @@ For the Web-to-lead to work correctly, the url redirect needs to be changed to t
 Home Page
 ![image](https://user-images.githubusercontent.com/46365790/131750197-ba907db8-7ff2-42a5-a24d-27d07e6fb9d5.png)
 
+Lot Filter Page
+![image](https://user-images.githubusercontent.com/46365790/131750297-a6a0d6e9-d87c-414b-b034-fbe9613a9fb0.png)
+
 ## Contributors
 * [Michael Erickson](https://github.com/michaelerickson98)
 * [David Shimer](https://github.com/dataronio)
