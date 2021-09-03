@@ -60,5 +60,5 @@ Lot Filter Page
 * [David Shimer](https://github.com/dataronio)
 * [Alex Barnard](https://github.com/AlexBarnard)
 * [Robert Propper](https://github.com/RobertPropper1)
-* [Allen Gomex](https://github.com/AllenG012)
-* [Same Adekunle](https://github.com/AAdekunle88)
+* [Allen Gomez](https://github.com/AllenG012)
+* [Sam Adekunle](https://github.com/AAdekunle88)
