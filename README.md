@@ -1,7 +1,7 @@
 # Project 2
 
 ## Project Description
-For this project, Team Amplifier Delta took on the project of Team Synergy, Our goal was to iterate what was previously created, by stepping away from Visualforce and into Aura Compoenents. To do this each member of our team took one page to convert to an Aura Component, and also implemented a business fucntional Aura Component.
+For this project, Team Amplifier Delta took on the project of Team Synergy, Our goal was to iterate what was previously created, by stepping away from Visualforce and into Aura Components. To do this each member of our team took one page to convert to an Aura Component, and also implemented a business functional Aura Component.
 
 ## Technologies Used
 * Apex
@@ -41,7 +41,7 @@ For this project, Team Amplifier Delta took on the project of Team Synergy, Our 
 * Title Aura Component
 
 ## Getting Started
-Step 1. Enable Expirence Cloud (setup => features => digital experience => settings => “Enable Experience Cloud Site” => enter unique domain name).
+Step 1. Enable Experience Cloud (setup => features => digital experience => settings => “Enable Experience Cloud Site” => enter unique domain name).
 
 Step 2. Change usernames on the sites (open VisualStudio => open the sites tab => change the admin and guest admin emails to the sys admin in org).
 
