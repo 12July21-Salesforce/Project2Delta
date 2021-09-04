@@ -46,7 +46,7 @@ Step 1. Enable Experience Cloud (setup => features => digital experience => sett
 Step 2. Change usernames on the sites (open VisualStudio => open the sites tab => change the admin and guest admin emails to the sys admin in org).
 
 ### <-- Optional -->
-For the Web-to-lead to work correctly, the url redirect needs to be changed to the url geneerated for your org. After creating the domain name, you need to update the domain name in the html markup to match what was created for your org.
+For the Web-to-lead to work correctly, the url redirect needs to be changed to the url generated for your org. After creating the domain name, you need to update the domain name in the html markup to match what was created for your org.
 
 ## Usage
 Home Page
